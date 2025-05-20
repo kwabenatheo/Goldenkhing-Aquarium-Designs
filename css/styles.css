@@ -689,3 +689,20 @@ iframe {
     font-weight: 600;    /* Make it bolder/darker */
     font-size: 1.1rem;   /* Slightly larger for emphasis (optional) */
 }
+
+/* About page text styling */
+.about,
+.about p,
+.about-highlight p,
+.ceo-section p,
+.ceo-text p {
+    color: #111111;      /* Black text */
+    font-size: 1.18rem;  /* Larger text */
+    font-weight: 500;    /* Slightly bolder */
+}
+
+.about h2,
+.about h3 {
+    color: #111111;
+    font-size: 2rem;
+}
