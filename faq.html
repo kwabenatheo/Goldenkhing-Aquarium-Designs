@@ -1,4 +1,4 @@
-...<!-- File: faq.html -->
+<!-- File: faq.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +13,7 @@
     <div class="container header-content">
       <h1 class="logo">AquaDreams</h1>
       <nav>
+        <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -46,6 +47,14 @@
       <p>&copy; 2025 AquaDreams. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>

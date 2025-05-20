@@ -26,3 +26,9 @@ form.addEventListener('submit', async (e) => {
         formResponse.style.color = 'red';
     }
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
