@@ -706,3 +706,12 @@ iframe {
     color: #111111;
     font-size: 2rem;
 }
+
+/* Make only the CEO section text black in the about page */
+.ceo-section,
+.ceo-section p,
+.ceo-text,
+.ceo-text p,
+.ceo-text h3 {
+    color: #111111 !important; /* Force black text */
+}
