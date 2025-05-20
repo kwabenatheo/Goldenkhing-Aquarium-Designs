@@ -19,16 +19,11 @@ body {
     max-width: 1140px;
     margin: auto;
     padding: 1rem;
-    background-image: url('../images/uw1.avif'); /* Path to your background image */
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    position: relative; /* Ensure proper stacking of elements */
-    padding: 20px; /* Add padding inside the container */
-    background-color: transparent; /* Set the background color to blue */
-    color: #ffffff; /* Ensure text is readable on the blue background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    background: transparent; /* Make container background transparent */
+    border-radius: 10px;
+    position: relative;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   header {
@@ -568,10 +563,10 @@ footer .social-links img {
 
 /* About Section */
 .about {
-    background-color: #0077b6; /* Set the background color to blue */
-    padding: 20px; /* Add padding inside the container */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    background: transparent; /* Remove blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #ffffff; /* Ensure text inside is readable on the blue background */
 }
 
@@ -762,7 +757,10 @@ iframe {
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    background-image: none;
+    background: transparent; /* Ensure container stays transparent on mobile */
+  }
+  .hero {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
   }
   .header-content, .feature-grid, .gallery-grid, .about-highlight, .ceo-section {
     flex-direction: column !important;
