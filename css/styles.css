@@ -671,24 +671,33 @@ footer .social-links img {
 
 /* Services Images */
 .services-images {
-    display: flex; /* Arrange images horizontally */
-    justify-content: space-between; /* Add space between images */
-    align-items: center; /* Align images vertically */
-    gap: 10px; /* Add spacing between images */
-    margin-top: 20px; /* Add spacing above the images */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .services-images img {
-    height: 250px; /* Increase the height of the images */
-    width: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    object-fit: cover; /* Ensure the image scales properly */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    transition: transform 0.3s ease; /* Add a hover effect */
+  width: 180px;
+  max-width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
 }
 
-.services-images img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
+/* On mobile: 2 images per row */
+@media (max-width: 600px) {
+  .services-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .services-images img {
+    width: 48%;
+    max-width: 48%;
+    margin-bottom: 8px;
+  }
 }
 
 /* Portfolio Grid */
