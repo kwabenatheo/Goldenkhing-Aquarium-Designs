@@ -287,6 +287,21 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 column on phones */
+  }
+  .gallery-grid img,
+  .gallery-grid video {
+    height: 200px; /* Smaller height for mobile */
+  }
+}
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -459,16 +474,12 @@ footer .social-links img {
         gap: 1rem;
     }
 
-    .hero .container {
-        padding: 10px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
+    .feature {
+        max-width: 100%;
     }
 }
 
-/* Parent Section for the Container */
+  /* Parent Section for the Container */
 .section-blue-background {
     background-color: #0077b6; /* Blue color to match the styling */
     padding: 20px 0; /* Add vertical padding */
@@ -611,6 +622,27 @@ footer .social-links img {
     color: #ffffff; /* Set paragraph text color to white */
 }
 
+/* Responsive Design for CEO Section */
+@media (max-width: 768px) {
+  .ceo-section {
+    flex-direction: column;      /* Stack image and text vertically */
+    align-items: flex-start;     /* Align items to the start */
+    text-align: left;            /* Align text to the left */
+    gap: 10px;                   /* Reduce gap for mobile */
+  }
+  .ceo-image {
+    width: 120px;                /* Smaller image on mobile */
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  .ceo-text h3 {
+    font-size: 1.2rem;
+  }
+  .ceo-text p {
+    font-size: 1rem;
+  }
+}
+
 /* Services Section */
 .services-container {
     background-color: #f0f8ff; /* Light blue background for a clean look */
@@ -719,4 +751,26 @@ iframe {
 /* Make CEO bio text white in the about page */
 .ceo-text p {
     color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .services-images {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .services-images img {
+    width: 100%;
+    height: 180px;
+  }
 }
