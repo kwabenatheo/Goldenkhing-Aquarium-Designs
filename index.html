@@ -9,21 +9,22 @@
 </head>
 <body>
 
-  <header>
-    <div class="container header-content">
-      <h1 class="logo">Goldenkhing Aquarium Designs</h1>
-      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Example header for all pages -->
+<header>
+  <div class="container header-content">
+    <h1 class="logo">Goldenkhing Aquarium Designs</h1>
+    <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <section class="hero">
     <div class="container">
@@ -110,9 +111,11 @@
   document.addEventListener("DOMContentLoaded", function() {
     const toggle = document.querySelector('.menu-toggle');
     const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', function() {
-      navLinks.classList.toggle('show');
-    });
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+      });
+    }
   });
 </script>
 </body>
