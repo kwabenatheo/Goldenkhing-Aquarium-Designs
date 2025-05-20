@@ -947,3 +947,10 @@ iframe {
     position: relative;
   }
 }
+
+.contact-info,
+.contact-info p,
+.contact-info a,
+.contact-info strong {
+  color: #fff !important;
+}
