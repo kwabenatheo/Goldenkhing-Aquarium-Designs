@@ -893,3 +893,46 @@ iframe {
     height: 90px;
   }
 }
+
+/* Mobile nav toggle styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    z-index: 1100;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0077b6;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 80vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .header-content {
+    position: relative;
+  }
+}
