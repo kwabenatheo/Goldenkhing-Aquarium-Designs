@@ -715,3 +715,8 @@ iframe {
 .ceo-text h3 {
     color: #111111 !important; /* Force black text */
 }
+
+/* Make CEO bio text white in the about page */
+.ceo-text p {
+    color: #ffffff !important;
+}
