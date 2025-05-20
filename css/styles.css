@@ -71,7 +71,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* Change to a semi-transparent white background */
     color: #003049; /* Set text color to dark blue for better contrast */
     position: relative;
-    background-image: url('../Images/uw1.avif'); /* Replace with your image path */
+    background-image: url('../images/uw1.avif'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -755,22 +755,14 @@ iframe {
 
 @media (max-width: 768px) {
   .container {
-    padding: 10px;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .logo {
-    font-size: 1.2rem;
-  }
-  .services-images {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-  .services-images img {
-    width: 100%;
-    height: 180px;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 10px !important;
+    background-image: url('../images/uw1.avif') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
   }
 }
