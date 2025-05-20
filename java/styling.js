@@ -25,10 +25,13 @@ form.addEventListener('submit', async (e) => {
         formResponse.textContent = 'An error occurred. Please try again.';
         formResponse.style.color = 'red';
     }
+<<<<<<< HEAD
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+=======
+>>>>>>> 4908981 (Re-upload all files after fixing git corruption)
 });
