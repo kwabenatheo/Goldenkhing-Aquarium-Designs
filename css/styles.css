@@ -644,6 +644,17 @@ footer .social-links img {
   }
 }
 
+@media (max-width: 600px) {
+  .ceo-section,
+  .ceo-section p,
+  .ceo-section h3 {
+    font-size: 0.95rem !important;
+  }
+  .ceo-section h3 {
+    font-size: 1.05rem !important;
+  }
+}
+
 /* Services Section */
 .services-container {
     background-color: #f0f8ff; /* Light blue background for a clean look */
