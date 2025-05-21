@@ -584,9 +584,9 @@ footer .social-links img {
 
 /* About Highlight Text */
 .about-highlight p {
-    color: #ffffff; /* Set text color to white for better contrast */
-    font-size: 1rem; /* Adjust font size */
-    line-height: 1.6; /* Improve readability */
+    color: #181818 !important;   /* Very dark gray for high visibility */
+    font-size: 1.15rem;          /* Slightly larger font size */
+    font-weight: 500;            /* Optional: make text a bit bolder */
 }
 
 /* CEO Section */
